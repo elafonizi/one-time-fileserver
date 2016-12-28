@@ -109,4 +109,4 @@ if not options.dev_mode:
         with open("daemon.log", 'a+') as fh:
             fh.write(str(e))
 else:
-    app.run(host="127.0.0.1", port=8080, debug=True, reloader=True)
+    app.run(host="0.0.0.0", port=8080, debug=True, reloader=True)
